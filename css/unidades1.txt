@@ -1,0 +1,15 @@
+- - - Absolutas
+  - px
+  - cm
+  - mm
+
+- - - Viewport
+  - vh / vw = vh para altura e vw para largura. Utilizam o tamanho total da viewport (tamanho do nosso dispositivo), uma altura de 100vh corresponde a 100% da página total, do nosso corpo do documento (body).
+  - vmin
+  - vmax
+
+- - - Font
+  - rem = fonte raiz (base, mais longe)
+  - em  = tamanho fonte mais próximo
+
+  % percentual = caso espcial
