@@ -5,7 +5,61 @@
     <meta charset="UTF-8">
     <title>Position</title>
     <style>
-        /* ... */
+        div{
+            font-size: 20px;
+            padding: 30px;
+            border: solid 5px #222;
+        }
+        .static{
+            top: 100px;
+            left: 100px;
+            background-color: blue;
+        }
+        /* fixado na página */
+        .fixed{
+            position: fixed;
+            bottom: 30px;
+            right: 0px;
+            background-color: tomato;
+        }
+        /* leva em consideração o elemento anterior */
+        .relative1{
+            position: relative;
+            left: 70px;
+            top: 5px;
+            background-color: cornflowerblue;
+        }
+        .absolute1{
+            position: absolute;
+            left: 350px;
+            top: 120px;
+            background-color: coral;
+        }
+
+        .relative2{
+            position: relative;
+            left: 350px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: slategray;
+        } 
+        /* está "preso ao relative2" */
+        .absolute2{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+        }
+
+        .sticky{
+            position: -webkit-sticky; /* pro safari */
+            position: sticky;
+            background-color: aquamarine;
+            top: 10px; /* fará que o elemento fique parado */
+        }
     </style>
 </head>
 

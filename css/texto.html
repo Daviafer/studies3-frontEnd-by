@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,57 @@
             flex-direction: column;
             align-items: center;
         }
+        p{
+            /* valores padrão */
+            font-size: 1em;
+            font-size: 100%;
+            font-size: 16px;
+            font-size: 12pt;
+            
+            /* unidades absolutas */
+            font-size: 100px;   /* tamanho relativo */
+            font-size: 72pt;    /* ponto */
+            font-size: 1in;     /* polegada */
+
+            /* unidades relativas */
+            font-size: 2.2em; /* relativo a tag anterior */
+            font-size: 2.2rem; /* relativo ao HTML */
+            font-size: 50vh; /* altura do view port */
+            font-size: 5vw; /* largura do view port */
+
+            /* familia de fontes */
+            font-family: monospace;
+            font-family: Georgia, serif; /* cerifada */
+            font-family: Verdana, sans-serif; /* Não cerifada */
+            font-family: 'Indie Flower', cursive;
+
+            font-weight: 700; /* peso das fontes */
+            font-style: italic;
+            text-transform: uppercase;
+            /* text-decoration: overline; */
+
+            word-spacing: 10px;
+            letter-spacing: 20px;
+            line-height: 2.5em;
+            text-align: right;
+        }
+        /* implementando o botão */
+        .botao{
+            font-size: 28px;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+        }
+        .destaque{
+            color: aliceblue;
+            background: tomato;
+            box-shadow: 2px 2px 1px 1px  #000;
+        }
+        .destaque:active{
+            box-shadow: none;
+        }
+
+
     </style>
 </head>
 
