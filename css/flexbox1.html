@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        .big{
+          font-size: 1.5em;
+        }
+        .flex-container{
+          display: flex;
+          flex-direction: column;
+          flex-direction: column-reverse; 
+          flex-direction: row-reverse;
+          flex-direction: row; 
+
+          width: 50%;
+          flex-wrap: wrap; /* quebra o conteúdo */
+          flex-wrap: wrap-reverse;
+          flex-flow: row wrap; /* estado normal = wrap */
+
+          height: 200px;
+          flex-flow: column-reverse wrap;
+          flex-flow: row wrap; /* estado normal = wrap */
+
+          justify-content: flex-start;
+          justify-content: flex-end;
+          justify-content: center;
+          justify-content: space-between;
+
+          /* Cross Axis */
+          height: 400px;
+          align-items: stretch; /* esticar */
+          align-items: baseline; /* ajusta com tamanho texto, mas mantendo a base - base de linha */
+          align-items: flex-start; /* alinha parte cima */
+          align-items: flex-end; /* parte baixo */
+
+          /* Mais de uma linha */
+          align-content: flex-start; /* todas linha p/ cima */
+          align-content: flex-end; /* todas linhas p/ baixo */
+          align-content: center;
+          align-content: space-around; /* espaço ao redor */
+          align-content: space-between; /* espaço entre */
+
+        }
     </style>
 </head>
 
@@ -22,6 +60,7 @@
         <div class="tag nolabel">8</div>
         <div class="tag nolabel">9</div>
         <div class="tag nolabel">10</div>
+        <div class="tag nolabel">Lorem</div>
     </div>
     <script src="js/tag.js"></script>
 </body>
