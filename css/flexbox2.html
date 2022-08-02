@@ -6,9 +6,42 @@
     <title>Flexbox #02</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        .flex-container div{
-          box-sizing: border-box;
-        }
+      .flex-container{
+        display: flex;
+        height: 300px;
+        width: 600px;
+      }
+      .flex-container div:nth-child(3){
+        background-color: red;
+        order:1; /* acima do default */
+        order: 0; /* padrão */
+        order: -1; /* abaixo do padrão */
+        
+        align-self: center; /* alinhando todo no container */
+        align-self: baseline;
+        align-self: flex-start;
+        align-self: flex-end;
+        align-self: stretch; /* todo o container */
+      }
+
+      /* espaços no container */
+      .flex-container div{
+        width: 100px;
+        flex-grow: 0;
+        flex-grow: 1;
+      }
+      .flex-container div:nth-child(1){
+        flex-grow: 2;
+      }
+
+      /* encolhendo no container */
+      .flex-container {
+        width: 300px;
+        flex-shrink: 1;
+      }
+      .flex-container div:nth-child(1){
+        flex-shrink: 5;
+      }
     </style>
 </head>
 
