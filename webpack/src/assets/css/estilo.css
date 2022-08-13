@@ -1,0 +1,8 @@
+
+body{
+  background-color: #454;
+  background-image: url(../imgs/img1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
